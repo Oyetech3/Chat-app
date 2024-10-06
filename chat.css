@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 50vw;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.allcon {
+    margin: 50px auto ;
+    
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 50vw;
+    box-shadow: 0 0 3px black;
+    overflow-y: auto;
+}
+
+.allcon .head {
+    
+    margin:  auto;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.head a i {
+    color: white;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-bottom: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.head p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.head .hd {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    margin: auto;
+    padding: 5px;
+}
+.head input {
+    width: 35vw;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+.hd .icon {
+    background-color: white;
+    height: 35px;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*.hd .icon.active i::before{
+    content: \f00d;
+}*/
+.hd i {
+    color: blue;
+    font-size: 22px;
+}
+
+.allcon .chats {
+    padding: 25px;
+    padding-top: 0;
+    height: 65vh;
+    overflow-y: auto;
+}
+.allcon ::-webkit-scrollbar {
+    width: 1.5px;
+  }
+  .allcon ::-webkit-scrollbar-track {
+    background: #ccc;
+  }
+  .allcon ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+    cursor: auto;
+  }
+
+.all {
+    display: flex;
+    margin: 20px 10px;
+    color: black;
+}
+.all .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.all .image img {
+    width: 50px;
+    height: 100%;
+    border-radius: 50px;
+}
+.all .mess {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all .mess .txts {
+    width: 40vw;
+}
+.all .mess .cir {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 30px;
+}
+.all .mess .cir.offline {
+    background-color: #ccc;
+}
+
+/* media queries */
+
+@media screen and (max-width : 1200px){
+    body {
+        width: 60vw;
+    }
+   .allcon {
+    width: 60vw;
+   }
+   .all .mess .txts {
+    width: 45vw;
+}
+}
+@media screen and (max-width : 760px) {
+    body {
+        width: 75vw;
+    }
+    .allcon {
+        width: 75vw;
+    }
+    .all .mess .txts {
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    body {
+        width: 85vw;
+    }
+    .allcon {
+        width: 85vw;
+    }
+    .all .mess .txts {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width : 560px) {
+    body {
+        width: 99vw;
+        height: 99vh;
+    }
+    .allcon {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+    }
+    .allcon .chats {
+        height: fit-content;
+    }
+    .all .mess .txts {
+        width: 75vw;
+    }
+    .head .hd {
+        
+        width: 60vw;
+        
+    }
+    .head input {
+        width: 50vw;
+       
+    }
+}
+@media screen and (max-width : 460px) {
+    .all .mess .txts {
+        width: 70vw;
+    }
+}
+@media screen and (max-width : 380px) {
+    .all .mess .txts {
+        width: 62vw;
+    }
+}
+@media screen and (max-width : 300px) {
+    .all .mess .txts {
+        width: 55vw;
+    }
+}
+@media screen and (max-width : 250px) {
+    .all .mess .cir {
+        display: none;
+    }
+    body {
+        width: 100vw;
+    }
+    .allcon {
+        width: 100vw;
+    }
+}
