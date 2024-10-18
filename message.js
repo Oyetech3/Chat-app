@@ -2,7 +2,7 @@ const form = document.querySelector(".form")
 const inputText = form.querySelector(".msg")
 const sendMsg = form.querySelector("button")
 const content = document.querySelector(".content")
-console.log("Console is on")
+
 
 form.onsubmit = (e) => {
     e.preventDefault()

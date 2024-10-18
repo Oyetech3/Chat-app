@@ -109,12 +109,12 @@ else {
                     $upload->close();
                 }
                 else {
-                    echo "<div class='errorfile'>Sorry, your file was not uploaded</div>";
+                    echo "<div class='errorfile'>Sorry, your picture was not uploaded</div>";
                 }
 
             
             }
-    else {
+        else {
             echo "<div class='errorfile'>Sorry, Invalid file type</div>";
             }
         

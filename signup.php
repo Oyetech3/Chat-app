@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
         //$sql->execute();
 
        if($sql->execute()) {
-        echo "<div class='success'>You have successfully signed up</div>";
+        echo "<div class='success'>You have successfully signed up, Click Sign In</div>";
         //header("location:signin.php");
        }
        else {
@@ -38,9 +38,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
 }
 
 //$conn->close();
-function goIn() {
-    header("location:signin.php");
-}
+
 
 ?>
 
@@ -63,7 +61,7 @@ function goIn() {
                 <h2>SIGN UP PAGE</h2>
             </div>
             <div class="form">
-                <form method="post" action="<?php echo $_SERVER["PHP_SELF"] ?>" enctype="multipart/form-data">
+                <form method="post" action="<?php echo $_SERVER["PHP_SELF"] ?>" enctype="multipart/form-data" autocomplete="off">
                     <label>Fullname</label><br>
                     <input type="text" name="fullname" placeholder="Enter your fullname">
                     <br><br>
@@ -91,7 +89,6 @@ function goIn() {
 
                     <div class="but">
                         <button type="submit">Sign Up</button>
-                        <!--<button type="button" onclick="goIn()">Sign In</button>!-->
                     </div>
                 </form>
                 <p>Already have have account ? <span class="span"><a href="signin.php">Sign in</a></span></p>

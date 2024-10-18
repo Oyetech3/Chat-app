@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
                 <h2>SIGN IN PAGE</h2>
             </div>
             <div class="form">
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data" autocomplete="off">
 
                     <label>Username</label><br>
                     <input type="text" name="username" placeholder="username">

@@ -22,8 +22,8 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
         VALUES('$fullname','$username','$gender','$number','$password')";
 
        if($conn->query($sql)) {
-        echo "<div class='success'>You have successfully signed up</div>";
-        header("location:signin.php");
+        echo "<div class='success'>You have successfully signed up, click Sign in</div>";
+        //header("location:signin.php");
        }
        else {
          echo "Inserting error " . $conn->error;

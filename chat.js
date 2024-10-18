@@ -2,7 +2,7 @@ const inpValue = document.querySelector(".hd input")
 const cancel = document.querySelector(".icon")
 const chats = document.querySelector(".allcon .chats");
 
-console.log("Console , is that ")
+
 
 cancel.onclick = () => {
     inpValue.classList.toggle("active")
